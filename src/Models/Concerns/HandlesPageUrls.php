@@ -67,6 +67,6 @@ trait HandlesPageUrls {
      * @return string[]
      */
     public function getAllUrls(): array {
-        return array_map([$this, 'getUrl'], $this->getAllUrlCacheKeysArgs());
+        return array_map([$this, 'getUrl'], $this->getAllCacheKeyArgs());
     }
 }
